@@ -53,6 +53,16 @@ dependencies:
 
 ## Setup
 0. Install [Compliance Masonry CLI](https://github.com/opencontrol/compliance-masonry)
+
+    ```bash
+    # Download the CLI
+    wget https://github.com/opencontrol/compliance-masonry/releases/download/v1.0.0/compliance-masonry_1.0.0_darwin_amd64.zip
+    # Unzip the CLI
+    unzip compliance-masonry_1.0.0_darwin_amd64.zip
+    # Move file into bin dir
+    mv compliance-masonry_1.0.0_darwin_amd64/compliance-masonry ~/bin/
+    ```
+
 0. "Import" the Cloud.gov dependencies.
 
   ```bash
