@@ -62,7 +62,7 @@ dependencies:
 The get command will import all the data from the cg-compliance repository and drop them into the `opencontrol` directory to serve as a baseline for your SSP
 
 
-# Creating Gitbook
+#### Creating Gitbook
 0. Update dependencies
 
   ```
@@ -83,7 +83,7 @@ The get command will import all the data from the cg-compliance repository and d
   gitbook serve
   ```
 
-## Create PDF
+#### Create PDF
 Req: Install ebook-convert from Calibre
 [May need to install ebook-convert from Calibre installed](https://github.com/GitbookIO/gitbook/issues/333)
 
