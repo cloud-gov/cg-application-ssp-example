@@ -14,15 +14,15 @@ The schema or language used to create compliance documentation for compliance ma
 
 ## Main Concepts
 ### [Components](https://github.com/opencontrol/schemas#component-yaml)
-Components represent individual parts of an application that deal with specific security requirements. For example, in the [AWS compliance documentation](https://github.com/opencontrol/aws-compliance) the [EC2](https://github.com/opencontrol/aws-compliance/blob/master/IAM/component.yaml) component deals with access control and identity management security requirements. In the [Cloud Foundry compliance docuentation](https://github.com/opencontrol/cf-compliance), the [UAA](https://github.com/opencontrol/cf-compliance/blob/master/UAA/component.yaml) the [Cloud Controller](https://github.com/opencontrol/cf-compliance/tree/master/CloudController) components deal with those requirements. In a straightforward Django-based application, for example, Django would be the component that deals with access control and identity management. As a developer building an SSP you most likely only deal with the component documentation.
+Components represent individual parts of an application that deal with specific security requirements. For example, in the [AWS compliance documentation](https://github.com/opencontrol/aws-compliance) the [EC2](https://github.com/opencontrol/aws-compliance/blob/master/IAM/component.yaml) component deals with access control and identity management security requirements. In the [Cloud Foundry compliance documentation](https://github.com/opencontrol/cf-compliance), the [UAA](https://github.com/opencontrol/cf-compliance/blob/master/UAA/component.yaml) the [Cloud Controller](https://github.com/opencontrol/cf-compliance/tree/master/CloudController) components deal with those requirements. In a straightforward Django-based application, for example, Django would be the component that deals with access control and identity management. As a developer building an SSP you most likely only deal with the component documentation.
 
 ### [Standards](https://github.com/opencontrol/schemas#standards-documentation)
-A standard is a list composed of individual security requirements called controls. The U.S. Government's central security standard is [NIST-800-53](https://web.nvd.nist.gov/view/800-53/home).
+A standard is a list composed of individual security requirements called controls. The U.S. Government's main security standard is [NIST-800-53](https://web.nvd.nist.gov/view/800-53/home).
 
 ### [Certifications](https://github.com/opencontrol/schemas#certifications)
 Since standards can have thousands of security requirements (aka controls), agencies like the GSA or organizations such as [FedRAMP](https://www.fedramp.gov) have curated a list of controls they require in order grant an IT system Authority to Operate (ATO). The GSA, for example, developed a certification called [the Lightweight ATO (LATO)](https://gsablogs.gsa.gov/innovation/2014/12/10/it-security-security-in-an-agile-development-cloud-world-by-kurt-garbars/), which uses only 24 controls.
 
-### [opencontrol.yaml]
+### [opencontrol.yaml](https://github.com/opencontrol/compliance-masonry#creating-an-opencontrol-project)
 The [opencontrol.yaml](https://github.com/opencontrol/compliance-masonry#creating-an-opencontrol-project) defines an application's documentation configuration settings in the same vein as a manifest.yaml defines the deployment configuration settings for an application built on [Cloud.Gov](https://cloud.gov/).
 
 Below is an example of a opencontrol.yaml file with descriptions of the fields:
