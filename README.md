@@ -63,6 +63,12 @@ dependencies:
     mv compliance-masonry_1.0.0_darwin_amd64/compliance-masonry ~/bin/
     ```
 
+0. Copy this REPO
+
+  ```bash
+  git clone https://github.com/18F/cg-application-ssp-example my-application && cd my-application && rm -rf .git
+  ```
+
 0. "Import" the Cloud.gov dependencies.
 
   ```bash
