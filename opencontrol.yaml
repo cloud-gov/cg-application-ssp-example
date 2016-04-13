@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+name: Your Application Name
+metadata:
+  description: "A description of the application"
+  maintainers:
+    - maintainer_email@email.com
+components:
+  - ./ExampleApplicationComponent
+dependencies:
+  systems:
+    - url: https://github.com/18F/cg-compliance
+      revision: master
+  certifications:
+    - url: https://github.com/18F/GSA-Certifications
