@@ -50,3 +50,57 @@ dependencies:
     - url: github.com/18F/NIST-800-53
       revision: master
 ```
+
+## Setup
+0. Install [Compliance Masonry CLI](https://github.com/opencontrol/compliance-masonry)
+0. "Import" the Cloud.gov dependencies.
+
+  ```bash
+  compliance-masonry get
+  ```
+
+The get command will import all the data from the cg-compliance repository and drop them into the `opencontrol` directory to serve as a baseline for your SSP
+
+
+# Creating Gitbook
+0. Update dependencies
+
+  ```
+  compliance-masonry get
+  ```
+
+0. Create Gitbook Documentation
+
+  ```bash
+  compliance-masonry docs gitbook LATO # `LATO` or `FedRAMP-low` .. etc.
+  ```
+
+0. Serve the Gitbook locally
+
+  ```bash
+  npm install gitbook-cli -g # Install Gitbook CLI
+  cd exports # Navigate to exports dir
+  gitbook serve
+  ```
+
+## Create PDF
+Req: Install ebook-convert from Calibre
+[May need to install ebook-convert from Calibre installed](https://github.com/GitbookIO/gitbook/issues/333)
+
+0. Install gitbook pdf extension
+
+  ```bash
+  npm install gitbook-pdf -g
+  ```
+
+0. Navigate to the exports dir
+
+  ```bash
+  cd exports
+  ```
+
+0. Create PDF
+
+  ```bash
+  gitbook pdf .
+  ```
