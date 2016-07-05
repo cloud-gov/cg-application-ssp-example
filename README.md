@@ -8,7 +8,7 @@ Nevertheless, U.S. Government security standards necessitate that every public-f
 
 In order to leverage [Cloud.Gov's](https://cloud.gov/) existing compliance documentation, 18F is starting to construct its documentation using the [Compliance Masonry CLI](https://github.com/opencontrol/compliance-masonry).
 
-[Compliance Masonry CLI](https://github.com/opencontrol/compliance-masonry) allows users to build documentation like they build code. This includes the ability to set [Cloud.Gov's Compliance Documentation](https://compliance.cloud.gov/) as a dependency for their application's documentation in the same way a developer set dependencies in package.json, Gemfile, or requirements.txt files.
+The [Compliance Masonry CLI](https://github.com/opencontrol/compliance-masonry) allows users to build documentation like they build code. This includes the ability to set [Cloud.Gov's Compliance Documentation](https://compliance.cloud.gov/) as a dependency for their application's documentation in the same way a developer set dependencies in package.json, Gemfile, or requirements.txt files.
 
 The schema or language used to create compliance documentation for compliance masonry is [the opencontrol schema](https://github.com/opencontrol/schemas).
 
@@ -41,13 +41,13 @@ standards: # An optional list of standards for more information visit: https://g
   - ./standard-1.yaml
 dependencies:
   certifications: # An optional list of certifications stored remotely
-    - url: github.com/18F/LATO
+    - url: https://github.com/18F/GSA-Certifications
       revision: master
   systems:  # An optional list of repos that contain an opencontrol.yaml stored remotely
-    - url: github.com/18F/cg-compliance
+    - url: https://github.com/18F/cg-compliance
       revision: master
   standards:   # An optional list of remote repos containing standards info that contain an opencontrol.yaml
-    - url: github.com/18F/NIST-800-53
+    - url: https://github.com/opencontrol/NIST-800-53-Standards
       revision: master
 ```
 
